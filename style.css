@@ -1,0 +1,593 @@
+/* kunpejiasu.homes - Ru-Kiln Celadon Porcelain & Jade-Ink Four-Winged Whale */
+:root {
+  --bg-ru: #EBF3F0;
+  --bg-celadon-band: #DCECE7;
+  --bg-jade-card: #FAFCFB;
+  --ink-pine: #0D262B;
+  --ink-bamboo: #35585E;
+  --celadon-main: #0E7490;
+  --celadon-deep: #155E75;
+  --jade-accent: #15803D;
+  --bronze-seal: #4D7C0F;
+  --border-celadon: rgba(14, 116, 144, 0.25);
+  --shadow-celadon: 0 18px 40px rgba(13, 38, 43, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Noto Serif SC", "Songti SC", "PingFang SC", "Microsoft YaHei", serif;
+  background-color: var(--bg-ru);
+  color: var(--ink-pine);
+  line-height: 1.8;
+}
+
+body {
+  background-color: var(--bg-ru);
+  background-image:
+    radial-gradient(circle at 80% 10%, rgba(14, 116, 144, 0.10) 0%, transparent 45%),
+    radial-gradient(circle at 15% 65%, rgba(21, 128, 61, 0.08) 0%, transparent 45%);
+  overflow-x: hidden;
+}
+
+a, a:visited {
+  color: var(--celadon-main);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--jade-accent);
+}
+
+.ru-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header with Lattice Double Border */
+.ru-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(235, 243, 240, 0.95);
+  border-bottom: 3px double var(--celadon-main);
+  padding: 14px 0;
+}
+
+.ru-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.ru-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none !important;
+}
+
+.ru-brand-name {
+  font-size: 1.48rem;
+  font-weight: 900;
+  color: var(--ink-pine);
+  letter-spacing: 2px;
+}
+
+.ru-menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.ru-menu a, .ru-menu a:visited {
+  color: var(--ink-pine);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.ru-menu a:hover, .ru-menu a.active {
+  background: var(--bg-celadon-band);
+  color: var(--celadon-main);
+}
+
+.btn-ru-nav, .btn-ru-nav:visited {
+  background: var(--celadon-main) !important;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  padding: 8px 22px !important;
+  border-radius: 6px !important;
+}
+
+/* Open Celadon Panorama Hero (Bright Celadon Scroll Stage, NOT a dark box) */
+.ru-hero {
+  padding: 44px 0 68px;
+}
+
+.ru-scroll-banner {
+  background: linear-gradient(180deg, #F4FAF8 0%, #DFEFEA 65%, #CBE4DD 100%);
+  border: 2px solid var(--celadon-main);
+  outline: 1px solid var(--border-celadon);
+  outline-offset: -8px;
+  border-radius: 16px;
+  padding: 44px 40px 36px;
+  box-shadow: var(--shadow-celadon);
+}
+
+.ru-hero-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.ru-seal-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink-pine);
+  color: #A7F3D0;
+  padding: 5px 14px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.ru-hero-top h1 {
+  font-size: 2.65rem;
+  line-height: 1.26;
+  color: var(--ink-pine);
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+
+.ru-hero-top h1 span {
+  color: var(--celadon-main);
+  border-bottom: 3px solid var(--jade-accent);
+}
+
+.ru-hero-lead {
+  font-size: 1.05rem;
+  color: var(--ink-bamboo);
+  margin-bottom: 24px;
+}
+
+.ru-cta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn-ru-celadon, .btn-ru-celadon:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0E7490 0%, #15803D 100%);
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 1.03rem;
+  font-weight: 800;
+  box-shadow: 0 12px 24px rgba(14, 116, 144, 0.24);
+  transition: transform 0.2s ease;
+}
+
+.btn-ru-celadon:hover {
+  transform: translateY(-3px);
+}
+
+.btn-ru-jade, .btn-ru-jade:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAFCFB;
+  color: var(--ink-pine) !important;
+  text-decoration: none !important;
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 800;
+  border: 2px solid var(--celadon-main);
+  transition: transform 0.2s ease;
+}
+
+.btn-ru-jade:hover {
+  background: var(--bg-celadon-band);
+  transform: translateY(-3px);
+}
+
+/* Open Celadon Landscape & Four-Winged Jade Whale SVG */
+.ru-landscape-stage svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes jadeWhaleAscend {
+  0%, 100% { transform: translate(0px, 0px) rotate(-2deg); }
+  50% { transform: translate(12px, -14px) rotate(1deg); }
+}
+
+@keyframes craneFlock {
+  0%, 100% { transform: translate(0px, 0px); }
+  50% { transform: translate(-16px, -8px); }
+}
+
+@keyframes ringPulse {
+  0%, 100% { transform: scale(1); opacity: 0.55; }
+  50% { transform: scale(1.08); opacity: 0.9; }
+}
+
+.anim-jade-whale {
+  animation: jadeWhaleAscend 5.2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.anim-cranes {
+  animation: craneFlock 6s ease-in-out infinite;
+}
+
+.anim-cloud-ring {
+  animation: ringPulse 4s ease-in-out infinite;
+  transform-origin: 310px 180px;
+}
+
+.ru-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border-celadon);
+  text-align: center;
+}
+
+.ru-stat-cell strong {
+  display: block;
+  font-size: 1.35rem;
+  color: var(--celadon-deep);
+}
+
+.ru-stat-cell span {
+  font-size: 0.86rem;
+  color: var(--ink-bamboo);
+}
+
+/* Sections with Vertical Seal Heading */
+.ru-sec {
+  padding: 74px 0;
+}
+
+.ru-sec.celadon-band {
+  background: var(--bg-celadon-band);
+  border-top: 1px solid var(--border-celadon);
+  border-bottom: 1px solid var(--border-celadon);
+}
+
+.ru-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 46px;
+}
+
+.ru-vert-seal {
+  writing-mode: vertical-rl;
+  background: var(--celadon-main);
+  color: #FFFFFF;
+  padding: 10px 6px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  border-radius: 4px;
+}
+
+.ru-title-wrap h2 {
+  font-size: 2.05rem;
+  color: var(--ink-pine);
+  margin-bottom: 6px;
+}
+
+.ru-title-wrap p {
+  color: var(--ink-bamboo);
+  font-size: 1.02rem;
+}
+
+/* Lattice Chamfered Cards */
+.ru-lattice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.ru-lattice-card {
+  background: var(--bg-jade-card);
+  border: 2px solid var(--border-celadon);
+  border-left: 6px solid var(--celadon-main);
+  border-radius: 4px 18px 4px 18px;
+  padding: 30px;
+  box-shadow: var(--shadow-celadon);
+}
+
+.ru-lattice-card h3 {
+  font-size: 1.24rem;
+  color: var(--ink-pine);
+  margin-bottom: 10px;
+}
+
+.ru-lattice-card p {
+  color: var(--ink-bamboo);
+  font-size: 0.95rem;
+}
+
+/* 4-Column Scroll Pillars for Streaming & AI */
+.ru-scroll-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ru-scroll-card {
+  background: var(--bg-jade-card);
+  border: 1px solid var(--border-celadon);
+  border-top: 5px solid var(--jade-accent);
+  border-radius: 12px;
+  padding: 26px 20px;
+  box-shadow: var(--shadow-celadon);
+}
+
+.ru-scroll-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--jade-accent);
+  background: rgba(21, 128, 61, 0.1);
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.ru-scroll-card h3 {
+  font-size: 1.16rem;
+  margin-bottom: 10px;
+  color: var(--ink-pine);
+}
+
+.ru-scroll-card p {
+  font-size: 0.92rem;
+  color: var(--ink-bamboo);
+}
+
+/* Pricing (3 tiers) */
+.ru-price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.ru-price-card {
+  background: var(--bg-jade-card);
+  border: 2px solid var(--border-celadon);
+  border-radius: 14px;
+  padding: 34px 28px;
+  box-shadow: var(--shadow-celadon);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ru-price-card.imperial {
+  background: #0D262B;
+  color: #EBF3F0;
+  border-color: var(--celadon-main);
+}
+
+.ru-price-card.imperial h3,
+.ru-price-card.imperial li {
+  color: #EBF3F0 !important;
+}
+
+.ru-price-val {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--celadon-main);
+  margin: 14px 0;
+}
+
+.ru-price-card.imperial .ru-price-val {
+  color: #5EEAD4;
+}
+
+.ru-price-ul {
+  list-style: none;
+  margin: 16px 0 26px;
+}
+
+.ru-price-ul li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--border-celadon);
+  font-size: 0.94rem;
+}
+
+/* Reviews & FAQ */
+.ru-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.ru-review-card {
+  background: var(--bg-jade-card);
+  border: 1px solid var(--border-celadon);
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: var(--shadow-celadon);
+}
+
+.ru-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ru-faq-card {
+  background: var(--bg-jade-card);
+  border: 1px solid var(--border-celadon);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.ru-faq-card h3 {
+  font-size: 1.1rem;
+  color: var(--celadon-deep);
+  margin-bottom: 8px;
+}
+
+/* Hub Grid */
+.ru-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.ru-hub-card {
+  background: var(--bg-jade-card);
+  border: 1px solid var(--border-celadon);
+  border-top: 4px solid var(--celadon-main);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-celadon);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ru-hub-card h2, .ru-hub-card h3 {
+  font-size: 1.15rem;
+  margin: 10px 0;
+}
+
+/* Subpage */
+.ru-doc-sec {
+  padding: 50px 0 76px;
+}
+
+.ru-doc-box {
+  max-width: 890px;
+  margin: 0 auto;
+  background: var(--bg-jade-card);
+  border: 2px solid var(--celadon-main);
+  border-radius: 16px;
+  padding: 44px;
+  box-shadow: var(--shadow-celadon);
+}
+
+.ru-doc-box h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.ru-doc-meta {
+  font-size: 0.88rem;
+  color: var(--ink-bamboo);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-celadon);
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ru-doc-body h2 {
+  font-size: 1.38rem;
+  color: var(--celadon-deep);
+  margin: 26px 0 12px;
+}
+
+.ru-doc-body h3 {
+  font-size: 1.14rem;
+  color: var(--jade-accent);
+  margin: 18px 0 8px;
+}
+
+.ru-doc-body p {
+  margin-bottom: 15px;
+}
+
+.ru-footer {
+  background: var(--ink-pine);
+  color: #D8E8E3;
+  padding: 42px 0;
+  border-top: 3px solid var(--celadon-main);
+}
+
+.ru-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ru-footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.ru-footer-links a, .ru-footer-links a:visited {
+  color: #5EEAD4 !important;
+  text-decoration: none;
+}
+
+@media (max-width: 980px) {
+  .ru-hero-top,
+  .ru-stats-strip,
+  .ru-lattice-grid,
+  .ru-scroll-grid,
+  .ru-price-grid,
+  .ru-review-grid,
+  .ru-faq-grid,
+  .ru-hub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .ru-nav-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ru-menu {
+    display: flex !important;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .ru-scroll-banner {
+    padding: 26px 18px;
+  }
+  .ru-hero-top h1 {
+    font-size: 2rem;
+  }
+  .ru-doc-box {
+    padding: 24px 18px;
+  }
+}
